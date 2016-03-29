@@ -12,6 +12,7 @@
 		3AD141741CAA25A1000C34F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD141721CAA25A1000C34F4 /* Main.storyboard */; };
 		3AD141761CAA25A1000C34F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD141751CAA25A1000C34F4 /* Assets.xcassets */; };
 		3AD141791CAA25A1000C34F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD141771CAA25A1000C34F4 /* LaunchScreen.storyboard */; };
+		3AD141811CAB1963000C34F4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD141801CAB1963000C34F4 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3AD141751CAA25A1000C34F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD141781CAA25A1000C34F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AD1417A1CAA25A1000C34F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD141801CAB1963000C34F4 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3AD1416E1CAA25A1000C34F4 /* AppDelegate.swift */,
 				3AD141701CAA25A1000C34F4 /* SearchViewController.swift */,
+				3AD141801CAB1963000C34F4 /* SearchResult.swift */,
 				3AD141721CAA25A1000C34F4 /* Main.storyboard */,
 				3AD141751CAA25A1000C34F4 /* Assets.xcassets */,
 				3AD141771CAA25A1000C34F4 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD141711CAA25A1000C34F4 /* SearchViewController.swift in Sources */,
+				3AD141811CAB1963000C34F4 /* SearchResult.swift in Sources */,
 				3AD1416F1CAA25A1000C34F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
