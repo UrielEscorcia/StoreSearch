@@ -15,7 +15,6 @@
 		3AD141711CAA25A1000C34F4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD141701CAA25A1000C34F4 /* SearchViewController.swift */; };
 		3AD141741CAA25A1000C34F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD141721CAA25A1000C34F4 /* Main.storyboard */; };
 		3AD141761CAA25A1000C34F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD141751CAA25A1000C34F4 /* Assets.xcassets */; };
-		3AD141791CAA25A1000C34F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD141771CAA25A1000C34F4 /* LaunchScreen.storyboard */; };
 		3AD141811CAB1963000C34F4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD141801CAB1963000C34F4 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		3AD141701CAA25A1000C34F4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3AD141731CAA25A1000C34F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AD141751CAA25A1000C34F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3AD141781CAA25A1000C34F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AD1417A1CAA25A1000C34F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD141801CAB1963000C34F4 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +71,6 @@
 				3A8291771CAB478B00A7E492 /* SearchResultCell.xib */,
 				3A82917B1CABB41000A7E492 /* NothingFoundCell.xib */,
 				3A40A3551CAF4F8A0024A2CD /* LoadingCell.xib */,
-				3AD141771CAA25A1000C34F4 /* LaunchScreen.storyboard */,
 				3AD1417A1CAA25A1000C34F4 /* Info.plist */,
 			);
 			path = StoreSearch;
@@ -138,7 +135,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD141791CAA25A1000C34F4 /* LaunchScreen.storyboard in Resources */,
 				3AD141761CAA25A1000C34F4 /* Assets.xcassets in Resources */,
 				3A40A3561CAF4F8A0024A2CD /* LoadingCell.xib in Resources */,
 				3A8291781CAB478B00A7E492 /* SearchResultCell.xib in Resources */,
@@ -170,14 +166,6 @@
 				3AD141731CAA25A1000C34F4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3AD141771CAA25A1000C34F4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AD141781CAA25A1000C34F4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

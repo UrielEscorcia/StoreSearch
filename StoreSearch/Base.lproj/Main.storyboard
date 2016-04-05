@@ -32,20 +32,45 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="OlY-uf-hy7"/>
                                 </connections>
                             </searchBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkr-KR-ftM">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="6b1-4H-GNw">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="qNT-54-8Dw">
+                                            <rect key="frame" x="150" y="7" width="300" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VGn-TA-cgH"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vkr-KR-ftM" secondAttribute="trailing" id="4zu-jE-sTt"/>
                             <constraint firstAttribute="trailing" secondItem="xyY-tG-E6j" secondAttribute="trailing" id="5J6-yb-nRe"/>
                             <constraint firstItem="H2h-4L-7o5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FWO-Xu-IJP"/>
                             <constraint firstItem="xyY-tG-E6j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OZc-8X-ZUO"/>
                             <constraint firstItem="H2h-4L-7o5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Pnq-sA-u5m"/>
                             <constraint firstAttribute="trailing" secondItem="H2h-4L-7o5" secondAttribute="trailing" id="UI8-wo-RQ6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xyY-tG-E6j" secondAttribute="bottom" id="Vep-ri-ucJ"/>
+                            <constraint firstItem="Vkr-KR-ftM" firstAttribute="top" secondItem="H2h-4L-7o5" secondAttribute="bottom" id="h0V-rb-rcq"/>
                             <constraint firstItem="xyY-tG-E6j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pmT-e1-DUD"/>
+                            <constraint firstItem="Vkr-KR-ftM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yJA-8f-3iI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="H2h-4L-7o5" id="ohW-bC-Z3a"/>
+                        <outlet property="segmentedControl" destination="qNT-54-8Dw" id="xWG-kV-3mm"/>
                         <outlet property="tableView" destination="xyY-tG-E6j" id="ve4-dA-hLq"/>
                     </connections>
                 </viewController>
