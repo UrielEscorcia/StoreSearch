@@ -42,6 +42,8 @@ class DetailViewController: UIViewController {
             updateUI()
         }
         
+        view.backgroundColor = UIColor.clearColor()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,7 +94,6 @@ class DetailViewController: UIViewController {
     }
     
     deinit {
-        print("deinit \(self)")
         downloadTask?.cancel()
     }
     
@@ -103,6 +104,14 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
         return DimmingPresentationController(presentedViewController: presented, presentingViewController: presenting)
+    }
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BounceAnimationController()
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return SlideOutAnimationController()
     }
 }
 
