@@ -17,8 +17,8 @@ extension UIImageView {
             
             if error == nil, let url = url, data = NSData(contentsOfURL: url), image = UIImage(data: data) {
                 dispatch_async(dispatch_get_main_queue()) {
-                    if let stringSelf = self {
-                        stringSelf.image = image
+                    if let strongSelf = self {
+                        strongSelf.image = image
                     }
                 }
             }
