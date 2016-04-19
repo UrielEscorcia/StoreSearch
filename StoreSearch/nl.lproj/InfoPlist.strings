@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  StoreSearch
+
+  Created by Urisito on 4/19/16.
+  Copyright © 2016 Urisito. All rights reserved.
+*/
+
+CFBundleDisplayName = "StoreZoeker";
